@@ -1,2 +1,28 @@
++------------------------------------------------------------------------------+
+| Version 0.2.x                                                                |
++------------------------------------------------------------------------------+
+v0.2.0 - Apr 22, 2016
+- General -
+    - Make the implementation more robust.
+    - A lot of comments describing the lib's class, functions and values.
+    - Now the Coloring and Coverting mode are into a class.
+
+- Sources -
+    cowtermcolor.py
+    - Add a lot of comments.
+    - Add dunder values describing the package.
+    - New classes to hold the config about coloring and coverting modes.
+    - Add some COWTODOs.
+    - Fix some typos.
+
+- Info Files -
+    CHANGELOG.txt
+    - Update the changelog format.
+
+
+
++------------------------------------------------------------------------------+
+| Version 0.1.x                                                                |
++------------------------------------------------------------------------------+
 v0.1.0 [Apr 7 2016] **Happy birthday brother**
     Finish the basic implementation.
