@@ -1,6 +1,21 @@
 +------------------------------------------------------------------------------+
 | Version 0.2.x                                                                |
 +------------------------------------------------------------------------------+
+v0.2.1 - Apr 22, 2016
+- General --
+    - Add the required files to upload the package into pypi.
+
+- Info Files -
+    - Rename the COPYING to LICENSE.
+    - Add setup.cfg
+    - Add setup.py
+    - Remove the Makefile.
+
+- Others -
+    - Add the .gitignore.
+
+
+--------------------------------------------------------------------------------
 v0.2.0 - Apr 22, 2016
 - General -
     - Make the implementation more robust.

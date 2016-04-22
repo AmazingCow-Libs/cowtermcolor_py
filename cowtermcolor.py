@@ -50,7 +50,7 @@ import os
 import sys;
 import re;
 
-__version__   = "0.1.1";
+__version__   = "0.2.1";
 __author__    = "n2omatt - <n2omatt@amazingcow.com>";
 __date__      = "April 15, 2016";
 __copyright__ = "Copyright 2016 - Amazing Cow "
