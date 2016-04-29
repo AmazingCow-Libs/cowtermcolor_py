@@ -86,7 +86,7 @@ The possible Color modes are:
 
     NEVER
         Don't care for where the os.stdout is assigned.
-        DON NOT put the coloring escape sequences anyway.
+        DO NOT put the coloring escape sequences anyway.
 
     DEFAULT
         Same of ONLY_IF_TERMINAL
