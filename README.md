@@ -191,7 +191,7 @@ from cowtermcolor import *;
 
 #This will output colors never - This is not default behavior so 
 #we NEED to be explicit here.
-ColorMode.mode = ColorMode.ALWAYS;
+ColorMode.mode = ColorMode.NEVER;
 print green("I'm never colored :/") + reset();
 ```
 
