@@ -1,6 +1,28 @@
 +------------------------------------------------------------------------------+
 | Version 0.2.x                                                                |
 +------------------------------------------------------------------------------+
+v0.2.2 - May 4, 2016
+-- General --
+    - New README.
+    - Improve documentation.
+
+-- Source --
+    cowtermcolor.py
+        - Improve documentation.
+        - Update version numbers.
+        - New release date.
+    setup.py
+        - Update the stuff for new release.
+
+-- Info Files --
+    README.md
+        - Rewrite the README to consistency with other
+          Amazing Cow's READMEs.
+
+-- Others --
+    Add the pydoc folder to gitignore.
+
+--------------------------------------------------------------------------------
 v0.2.1 - Apr 22, 2016
 - General --
     - Add the required files to upload the package into pypi.
