@@ -39,10 +39,36 @@
 ##                                  Enjoy :)                                  ##
 ##----------------------------------------------------------------------------##
 
-##COWTODO: Add a more descriptive comment.
 """
 Smart color formating for output in terminal.
 
+cowtermcolor is a library to ease the terminal coloring.
+
+It was inspired by the Amazing Cow's C++ Termcolor_cpp
+(http://www.github.com/AmazingCow-Libs/Termcolor_cpp), which was
+inspired by the python's termcolor
+
+With cowtermcolor_py we can:
+   * Use the colored function - "Same" as the Termcolor_cpp
+                                 colored function.
+   * Use standalone functions - Like print red("MyString")) + reset();
+   * Use functor objects      - This is nice because we can setup
+                                the coloring options and use it later,
+                                possible multiple times.
+
+Smart coloring:
+    What is really nice in cowtermcolor_py and in Termcolor_cpp is both
+    libs knows if the output is the terminal or not,  i.e. them knows
+    if the stdout is attached to a tty.
+
+
+And what we gain with this?
+    1. By default it will output the coloring escape sequences
+       only if the stdout is a tty.
+    2. Cleaner code - We don't need check the output anymore
+       (If we want the default).
+    3. More cleaner code - To enable, or disable the coloring
+       we can set it only once.
 """
 
 ## Imports ##
@@ -50,9 +76,9 @@ import os
 import sys;
 import re;
 
-__version__   = "0.2.1";
+__version__   = "0.2.2";
 __author__    = "n2omatt - <n2omatt@amazingcow.com>";
-__date__      = "April 15, 2016";
+__date__      = "May 4, 2016";
 __copyright__ = "Copyright 2016 - Amazing Cow "
 __license__   = 'GPLv3'
 
@@ -236,8 +262,26 @@ UNDERLINE = 4;
 ################################################################################
 ## Colored Function                                                           ##
 ################################################################################
-#COWTODO: Add docstring comment.
 def colored(s, fg = None, bg = None, attrs = None):
+    """colored(s, fg=None, bg=None, attrs=None) -> str
+
+    Builds the colored output in one function.
+    It will put the foreground color, then the background and after all
+    the attributes if there are any.
+
+    str        - The string that will be colored.(Mandatory)
+    foreground - A valid foreground color code.  (Optional)
+    background - A valid background color code.  (Optional)
+    attributes - A valid attributes codes.       (Optional)
+
+    This function is affected by the values of:
+    ColorMode.mode and ConvertMode.mode.
+
+    This function will not check the validity of the color codes,
+    so is user's responsibility to ensure that them are valid.
+
+    The best bet is use the cowtermcolor constants.
+"""
     r = "";
     #Foreground.
     if(fg is not None):
