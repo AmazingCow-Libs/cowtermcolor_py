@@ -6,14 +6,14 @@ from distutils.core import setup
 setup(
     name        = "cowtermcolor",
     description = "Smart color formating for output in terminal.",
-    version = "0.2.1",
+    version = "0.2.2",
     license = "GPLv3",
 
     author       = "n2omatt - amazingcow",
     author_email = "n2omatt@gmail.com",
 
     url          = 'https://github.com/AmazingCow-Libs/cowtermcolor_py',
-    download_url = "https://github.com/AmazingCow-Libs/cowtermcolor_py/tarball/v0.2.1",
+    download_url = "https://github.com/AmazingCow-Libs/cowtermcolor_py/tarball/v0.2.2",
 
     py_modules = ["cowtermcolor"],
 
