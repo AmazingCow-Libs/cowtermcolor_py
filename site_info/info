@@ -1,0 +1,12 @@
+Title:
+    cowtermcolor_py
+Description:
+    Library to ease the terminal coloring inspired by the Amazing Cow's C++ Termcolor_cpp.
+URL:
+    Github, http://github.com/AmazingCow-Libs/cowtermcolor_py
+    Docs, http://docs.amazingcow.com/cowtermcolor_py
+    Pypi, https://pypi.python.org/pypi/cowtermcolor
+Owner:
+    AmazingCow Labs
+Section:
+    Libs
